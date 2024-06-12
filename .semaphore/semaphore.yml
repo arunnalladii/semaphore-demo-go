@@ -15,8 +15,6 @@ blocks:
             - go get
             - go build -o ./bin/main
             - cache store $(checksum main.go) bin
-      secrets:
-        - name: test-home
   - name: Check code style
     task:
       jobs:
